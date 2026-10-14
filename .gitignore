@@ -1,0 +1,25 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv*/
+.venv/
+__pycache__/
+*.pyc
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Large dataset (training only, not needed for deploy)
+mbti_1.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.claude/

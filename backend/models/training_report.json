@@ -1,0 +1,102 @@
+{
+  "old": {
+    "IE": {
+      "accuracy": 0.7704,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4351,
+      "auc": 0.6564
+    },
+    "NS": {
+      "accuracy": 0.8618,
+      "balanced_accuracy": 0.5019,
+      "macro_f1": 0.4683,
+      "auc": 0.6361
+    },
+    "TF": {
+      "accuracy": 0.735,
+      "balanced_accuracy": 0.7345,
+      "macro_f1": 0.7338,
+      "auc": 0.7992
+    },
+    "JP": {
+      "accuracy": 0.6144,
+      "balanced_accuracy": 0.5236,
+      "macro_f1": 0.4499,
+      "auc": 0.6243
+    },
+    "exact_type": 0.2803,
+    "quiz_separation": {
+      "IE": {
+        "mean_gap": 0.0135,
+        "right_direction": "6/13"
+      },
+      "NS": {
+        "mean_gap": 0.0031,
+        "right_direction": "1/12"
+      },
+      "TF": {
+        "mean_gap": 0.0429,
+        "right_direction": "7/12"
+      },
+      "JP": {
+        "mean_gap": -0.0048,
+        "right_direction": "0/13"
+      }
+    }
+  },
+  "new": {
+    "IE": {
+      "accuracy": 0.6828,
+      "balanced_accuracy": 0.6509,
+      "macro_f1": 0.6184,
+      "auc": 0.7164,
+      "threshold": 0.52,
+      "trees": 218
+    },
+    "NS": {
+      "accuracy": 0.6175,
+      "balanced_accuracy": 0.635,
+      "macro_f1": 0.5276,
+      "auc": 0.6834,
+      "threshold": 0.6,
+      "trees": 229
+    },
+    "TF": {
+      "accuracy": 0.7611,
+      "balanced_accuracy": 0.7614,
+      "macro_f1": 0.7603,
+      "auc": 0.8409,
+      "threshold": 0.52,
+      "trees": 726
+    },
+    "JP": {
+      "accuracy": 0.5645,
+      "balanced_accuracy": 0.5867,
+      "macro_f1": 0.5644,
+      "auc": 0.647,
+      "threshold": 0.44,
+      "trees": 390
+    },
+    "exact_type": 0.2028,
+    "quiz_separation": {
+      "IE": {
+        "mean_gap": 0.0256,
+        "right_direction": "7/13"
+      },
+      "NS": {
+        "mean_gap": 0.028,
+        "right_direction": "9/12"
+      },
+      "TF": {
+        "mean_gap": 0.1392,
+        "right_direction": "10/12"
+      },
+      "JP": {
+        "mean_gap": 0.0207,
+        "right_direction": "5/13"
+      }
+    }
+  },
+  "test_set_size": 1302,
+  "note": "Old models were trained on an unknown split that likely overlaps this test set, so their numbers here are optimistic."
+}

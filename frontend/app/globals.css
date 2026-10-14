@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --bg-elevated: 255 255 255;
+  --border: 0 0 0;
+  --fg: 0 0 0;
+  --fg-muted: 90 90 90;
+  --glass-alpha: 0.85;
+  --glass-border-alpha: 0.08;
+}
+
+.dark {
+  --bg: 0 0 0;
+  --bg-elevated: 0 0 0;
+  --border: 255 255 255;
+  --fg: 255 255 255;
+  --fg-muted: 165 165 165;
+  --glass-alpha: 0.65;
+  --glass-border-alpha: 0.12;
+}
+
+html {
+  font-size: 112.5%;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::selection {
+  background-color: rgb(29 78 216 / 0.35);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8 60%, #172554);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    rgb(var(--fg-muted)) 0%,
+    rgb(var(--fg)) 50%,
+    rgb(var(--fg-muted)) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  background-color: rgb(var(--bg-elevated) / var(--glass-alpha));
+  border: 1px solid rgb(var(--border) / var(--glass-border-alpha));
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  box-shadow: 0 1px 0 0 rgb(var(--fg) / 0.04) inset,
+    0 8px 30px -12px rgb(0 0 0 / 0.25);
+}
+
+.glass-nav {
+  background-color: rgb(var(--bg) / 0.92);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+}
+
+.skeleton {
+  background-image: linear-gradient(
+    90deg,
+    rgb(var(--fg) / 0.06) 0%,
+    rgb(var(--fg) / 0.14) 50%,
+    rgb(var(--fg) / 0.06) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

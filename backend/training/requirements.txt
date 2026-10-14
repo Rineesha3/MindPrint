@@ -1,0 +1,6 @@
+catboost==1.2.10
+scikit-learn==1.7.2
+numpy==2.5.1
+scipy==1.16.3
+pandas
+python-dotenv==1.2.2

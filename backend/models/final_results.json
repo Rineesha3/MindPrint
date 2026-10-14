@@ -1,0 +1,28 @@
+{
+  "IE": {
+    "test_acc": 0.6509,
+    "test_f1": 0.6184,
+    "test_auc": 0.7164,
+    "threshold": 0.52
+  },
+  "NS": {
+    "test_acc": 0.635,
+    "test_f1": 0.5276,
+    "test_auc": 0.6834,
+    "threshold": 0.6
+  },
+  "TF": {
+    "test_acc": 0.7614,
+    "test_f1": 0.7603,
+    "test_auc": 0.8409,
+    "threshold": 0.52
+  },
+  "JP": {
+    "test_acc": 0.5867,
+    "test_f1": 0.5644,
+    "test_auc": 0.647,
+    "threshold": 0.44
+  },
+  "combined_16type_exact_match_accuracy": 0.2028,
+  "test_set_size": 1302
+}
