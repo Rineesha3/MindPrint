@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MindPrint - Personality Type Prediction
 
 Predicts your MBTI-style personality type from how you write, combined with a short adaptive quiz.
@@ -76,6 +75,3 @@ npm run dev
 ```
 
 The app runs on http://localhost:3000. Keep the backend running alongside it.
-=======
-# MindPrint
->>>>>>> 7e9db397a357e672012f0c4daf32ed29ccb6994a
